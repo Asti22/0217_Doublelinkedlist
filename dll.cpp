@@ -12,4 +12,9 @@ struct Node
 
 Node*START=NULL;
 
+void addNode(){
+    Node* newNode = new Node(); // step 1: create a new node
+    
+}
+
 
