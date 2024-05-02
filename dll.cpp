@@ -32,8 +32,11 @@ void addNode(){
             START->prev = newNode; // step 4: make the fisrt node point to the new node
 
          }
-         newNode->prev =Null;  //step 5: make the nwe node point to null
+         newNode->prev =NULL;  //step 5: make the nwe node point to null
          START =newNode; //step 6: make the new node the firt node
+    }
+    else {
+        //insert the new mode in the middle or at the end
     }
     
 }
