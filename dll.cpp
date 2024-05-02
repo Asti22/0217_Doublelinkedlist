@@ -27,7 +27,13 @@ void addNode(){
             return;
         }
         //if the list is empty, make the new mode the START
-    
+         newNode->next=START; // STEP 3: make the new mode point to the first node
+         if(START != NULL){
+            START->prev = newNode; // step 4: make the fisrt node point to the new node
+
+         }
+         newNode->prev =Null;  //step 5: make the nwe node point to null
+         START =newNode; //step 6: make the new node the firt node
     }
     
 }
