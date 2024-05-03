@@ -84,6 +84,14 @@ void deleteNode()
     int rollNo;
 
     cout <<"\nEnter the roll number of the student whole record is to be delete: ";
-    cin>> rollNo; //step 3:get the roll number to be delete
+    cin>> rollNo; //step 3:get the roll number to be delete 
+
+    if (START ==NULL)
+    {
+        cout <<"List is empty"<<endl;
+        return;
+    }
+    current =START;  //Step 1:start from the firts node
+    previous = NULL;
 }
 
