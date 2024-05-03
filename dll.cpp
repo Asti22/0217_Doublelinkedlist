@@ -57,12 +57,26 @@ void addNode(){
         {
            previous->next =newNode; //step 7:make the next field of the previous node point to the new node
         }
-        else{
+        else
+        {
             //if previous is sti;; NULL, it means newNode is now the firts node
             START =newNode;
         }
     }
     
 }
+
+bool search(int rollNo, Node **previous, Node**current)
+ {
+    *previous = NULL;
+    *current = START;
+    while (*current != NULL && (*current)-> noMhs != rollNo)
+    {
+        *previous = *current;
+        *current = (*current)->next;
+    }
+    return(*current != NULL);
+
+ }
 
 
