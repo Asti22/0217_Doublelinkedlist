@@ -105,5 +105,16 @@ void deleteNode()
         cout <<"\033[31mTge record with roll number "<< rollNo << "not found\033[om" <<endl;
         return;
     }
+
+    //node to be deleted is the firts node
+    if(current ==START)
+    {
+        START = START->next; //step 2:update the start ponter
+        if (START != NULL)
+        {
+            START ->prev =NULL; 
+        }
+    }
+    
 }
 
